@@ -2,7 +2,10 @@ import importlib.util
 import json
 import sys
 import tempfile
+import tomllib
 from pathlib import Path
+
+import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -11,6 +14,11 @@ TOOL = ROOT / "tools" / "kaggle_run.py"
 
 def load_tool():
     spec = importlib.util.spec_from_file_location("kaggle_run", TOOL); module = importlib.util.module_from_spec(spec); assert spec and spec.loader; sys.modules[spec.name] = module; spec.loader.exec_module(module); return module
+
+
+def load_config(path: Path):
+    with path.open("rb") as handle:
+        return tomllib.load(handle)
 
 
 def test_registry_and_commit_slug_contract():
@@ -42,6 +50,30 @@ def test_pilot_stages_maintained_cifar_dataset(monkeypatch):
     with tempfile.TemporaryDirectory() as temp:
         tool.stage("c" * 40, experiment, Path(temp)); metadata = json.loads((Path(temp) / "kernel-metadata.json").read_text())
     assert metadata["dataset_sources"] == ["pankrzysiu/cifar10-python"]
+
+
+def test_main_seed_assignment_is_complete_disjoint_and_recipe_frozen():
+    tool = load_tool()
+    assignment = json.loads((ROOT / "data/manifests/main-seed-assignment-v1.json").read_text())
+    digest = bytes.fromhex(assignment["source_manifest_sha256"])
+    entropy = [int.from_bytes(digest[index:index + 4], "big") for index in range(0, len(digest), 4)]
+    expected = np.random.SeedSequence(entropy=entropy).generate_state(20, dtype=np.uint32).tolist()
+    development = [tool.resolve(f"main-development-{batch:02d}") for batch in range(1, 7)]
+    confirmation = [tool.resolve(f"main-confirmation-{batch:02d}") for batch in range(1, 5)]
+    development_seeds = [seed for experiment in development for seed in load_config(ROOT / experiment["config"])["run"]["root_seeds"]]
+    confirmation_seeds = [seed for experiment in confirmation for seed in load_config(ROOT / experiment["config"])["run"]["root_seeds"]]
+    pilot = load_config(ROOT / "configs/pilot.toml")
+    assert assignment["derivation"]["entropy"] == entropy
+    assert assignment["development"] == expected[:12] == development_seeds
+    assert assignment["confirmation"] == expected[12:] == confirmation_seeds
+    assert not set(development_seeds) & set(confirmation_seeds)
+    assert not set(pilot["run"]["root_seeds"]) & set(development_seeds + confirmation_seeds)
+    for experiment in development + confirmation:
+        config = load_config(ROOT / experiment["config"])
+        assert config["run"]["mode"] == "main"
+        assert config["training"] == pilot["training"]
+        assert config["data"] == pilot["data"]
+        assert experiment["dataset_sources"] == ["pankrzysiu/cifar10-python"]
 
 
 def test_status_parser_uses_exact_worker_status(monkeypatch):

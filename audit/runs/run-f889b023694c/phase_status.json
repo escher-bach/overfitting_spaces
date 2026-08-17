@@ -1,0 +1,24 @@
+{
+  "phases": [
+    {
+      "at": 1787000738.5305302,
+      "phase": "capture_environment",
+      "state": "complete"
+    },
+    {
+      "at": 1787000738.5434945,
+      "phase": "training",
+      "scheduling": "one independent seed process per GPU; no DDP",
+      "seeds": [
+        101,
+        202
+      ],
+      "state": "running"
+    },
+    {
+      "at": 1787001462.3484828,
+      "phase": "training",
+      "state": "complete"
+    }
+  ]
+}

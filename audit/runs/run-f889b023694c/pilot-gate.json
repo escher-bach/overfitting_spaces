@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "run_id": "run-f889b023694c",
+  "decision": "pass",
+  "evaluation_split": "recipe_validation",
+  "criteria": {
+    "minimum_before_final_checkpoint": true,
+    "sustained_post_minimum_deterioration": true,
+    "training_loss_improves_or_saturates": true
+  },
+  "seeds": {
+    "101": {
+      "minimum_epoch": 20,
+      "minimum_evaluation_loss": 1.3873314453125,
+      "final_epoch": 200,
+      "final_evaluation_loss": 2.3183880859375,
+      "final_minus_minimum_loss": 0.9310566406249998,
+      "post_minimum_checkpoints": 36,
+      "post_minimum_checkpoints_above_minimum": 36,
+      "training_loss_at_minimum": 0.89727744140625,
+      "final_training_loss": 0.00008848824501037597
+    },
+    "202": {
+      "minimum_epoch": 5,
+      "minimum_evaluation_loss": 1.603746484375,
+      "final_epoch": 200,
+      "final_evaluation_loss": 2.1961986328125,
+      "final_minus_minimum_loss": 0.5924521484375,
+      "post_minimum_checkpoints": 39,
+      "post_minimum_checkpoints_above_minimum": 39,
+      "training_loss_at_minimum": 1.45982275390625,
+      "final_training_loss": 0.00004000315666198731
+    }
+  },
+  "frozen_recipe_source": "configs/pilot.toml",
+  "main_seed_assignment": "data/manifests/main-seed-assignment-v1.json"
+}

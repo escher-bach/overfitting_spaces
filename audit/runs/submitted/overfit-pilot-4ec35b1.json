@@ -1,0 +1,13 @@
+{
+  "experiment": "pilot-overfit",
+  "kernel": "aniruddhavarma/overfit-pilot-4ec35b1",
+  "version": 1,
+  "exact_version": "aniruddhavarma/overfit-pilot-4ec35b1/1",
+  "url": "https://www.kaggle.com/code/aniruddhavarma/overfit-pilot-4ec35b1",
+  "git_sha": "4ec35b135a5500fc777b3aa02f5f10b63378d204",
+  "git_remote_url": "https://github.com/escher-bach/overfitting_spaces.git",
+  "config": "configs/pilot.toml",
+  "config_sha256": "0b70cad13854efc70636097707a16e7397bfb6e26d14f9907fc31f14c693f233",
+  "manifest_sha256": "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb",
+  "submitted_at": "2026-08-17T21:05:09.598511+00:00"
+}

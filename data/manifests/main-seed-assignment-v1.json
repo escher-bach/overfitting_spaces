@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "purpose": "Outcome-independent assignment of main-run root seeds before any main results are examined.",
+  "source_manifest": "data/manifests/cifar10-v1.json",
+  "source_manifest_sha256": "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb",
+  "derivation": {
+    "library": "numpy",
+    "algorithm": "numpy.random.SeedSequence",
+    "numpy_version_contract": ">=1.26,<3",
+    "entropy": [3382477413, 2647320264, 1960983262, 570105450, 1055347202, 3802860657, 475290928, 3891392475],
+    "entropy_encoding": "eight consecutive unsigned 32-bit big-endian integers from the 32-byte source_manifest_sha256 digest",
+    "state_call": "SeedSequence(entropy=entropy).generate_state(20, dtype=numpy.uint32).tolist()"
+  },
+  "development": [881886696, 1226023601, 3549333581, 2325060526, 4247511459, 3127276340, 3002361271, 1741336945, 310190245, 2722409734, 4292514521, 971400669],
+  "confirmation": [4215202006, 790319593, 697640214, 4042170709, 3506535737, 1471105357, 1709270050, 2692295618]
+}

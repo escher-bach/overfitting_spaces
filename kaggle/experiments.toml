@@ -22,3 +22,83 @@ manifest = "data/manifests/cifar10-v1.json"
 manifest_sha256 = "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb"
 dataset_sources = ["pankrzysiu/cifar10-python"]
 purpose = "two concurrent recipe-validation-only seeds; must pass the pilot gate before main runs"
+
+[experiments.main-development-01]
+slug_prefix = "overfit-main-development-01"
+config = "configs/main-development-01.toml"
+manifest = "data/manifests/cifar10-v1.json"
+manifest_sha256 = "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb"
+dataset_sources = ["pankrzysiu/cifar10-python"]
+purpose = "development batch 1 of 6; preassigned seeds; final evaluation only"
+
+[experiments.main-development-02]
+slug_prefix = "overfit-main-development-02"
+config = "configs/main-development-02.toml"
+manifest = "data/manifests/cifar10-v1.json"
+manifest_sha256 = "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb"
+dataset_sources = ["pankrzysiu/cifar10-python"]
+purpose = "development batch 2 of 6; preassigned seeds; final evaluation only"
+
+[experiments.main-development-03]
+slug_prefix = "overfit-main-development-03"
+config = "configs/main-development-03.toml"
+manifest = "data/manifests/cifar10-v1.json"
+manifest_sha256 = "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb"
+dataset_sources = ["pankrzysiu/cifar10-python"]
+purpose = "development batch 3 of 6; preassigned seeds; final evaluation only"
+
+[experiments.main-development-04]
+slug_prefix = "overfit-main-development-04"
+config = "configs/main-development-04.toml"
+manifest = "data/manifests/cifar10-v1.json"
+manifest_sha256 = "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb"
+dataset_sources = ["pankrzysiu/cifar10-python"]
+purpose = "development batch 4 of 6; preassigned seeds; final evaluation only"
+
+[experiments.main-development-05]
+slug_prefix = "overfit-main-development-05"
+config = "configs/main-development-05.toml"
+manifest = "data/manifests/cifar10-v1.json"
+manifest_sha256 = "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb"
+dataset_sources = ["pankrzysiu/cifar10-python"]
+purpose = "development batch 5 of 6; preassigned seeds; final evaluation only"
+
+[experiments.main-development-06]
+slug_prefix = "overfit-main-development-06"
+config = "configs/main-development-06.toml"
+manifest = "data/manifests/cifar10-v1.json"
+manifest_sha256 = "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb"
+dataset_sources = ["pankrzysiu/cifar10-python"]
+purpose = "development batch 6 of 6; preassigned seeds; final evaluation only"
+
+[experiments.main-confirmation-01]
+slug_prefix = "overfit-main-confirmation-01"
+config = "configs/main-confirmation-01.toml"
+manifest = "data/manifests/cifar10-v1.json"
+manifest_sha256 = "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb"
+dataset_sources = ["pankrzysiu/cifar10-python"]
+purpose = "locked confirmation batch 1 of 4; preassigned seeds; do not submit before the analysis protocol is frozen"
+
+[experiments.main-confirmation-02]
+slug_prefix = "overfit-main-confirmation-02"
+config = "configs/main-confirmation-02.toml"
+manifest = "data/manifests/cifar10-v1.json"
+manifest_sha256 = "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb"
+dataset_sources = ["pankrzysiu/cifar10-python"]
+purpose = "locked confirmation batch 2 of 4; preassigned seeds; do not submit before the analysis protocol is frozen"
+
+[experiments.main-confirmation-03]
+slug_prefix = "overfit-main-confirmation-03"
+config = "configs/main-confirmation-03.toml"
+manifest = "data/manifests/cifar10-v1.json"
+manifest_sha256 = "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb"
+dataset_sources = ["pankrzysiu/cifar10-python"]
+purpose = "locked confirmation batch 3 of 4; preassigned seeds; do not submit before the analysis protocol is frozen"
+
+[experiments.main-confirmation-04]
+slug_prefix = "overfit-main-confirmation-04"
+config = "configs/main-confirmation-04.toml"
+manifest = "data/manifests/cifar10-v1.json"
+manifest_sha256 = "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb"
+dataset_sources = ["pankrzysiu/cifar10-python"]
+purpose = "locked confirmation batch 4 of 4; preassigned seeds; do not submit before the analysis protocol is frozen"

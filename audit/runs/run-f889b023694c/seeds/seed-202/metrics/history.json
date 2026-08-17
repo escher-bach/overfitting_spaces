@@ -1,0 +1,2994 @@
+[
+  {
+    "epoch": 0,
+    "evaluation": {
+      "accuracy": 0.0994,
+      "loss": 2.65645546875
+    },
+    "nuisance": {
+      "mean_entropy": 2.0236756801605225,
+      "mean_logit_norm": 2.8116557598114014,
+      "mean_max_probability": 0.2507869005203247,
+      "predicted_class_histogram": [
+        0,
+        0,
+        0,
+        4954,
+        12,
+        0,
+        0,
+        0,
+        0,
+        34
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-000.safetensors",
+      "sha256": "ced206153ba3f420547a215dfb79f21e8d10ae515b940eeea54575887458b744",
+      "shape": [
+        5000,
+        10
+      ]
+    }
+  },
+  {
+    "epoch": 1,
+    "learning_rate": 0.1,
+    "train": {
+      "accuracy": 0.1463,
+      "images_per_second": 924.4980201582279,
+      "loss": 2.890115234375
+    }
+  },
+  {
+    "epoch": 2,
+    "learning_rate": 0.09999383162408304,
+    "train": {
+      "accuracy": 0.266,
+      "images_per_second": 4441.606561854568,
+      "loss": 2.010496484375
+    }
+  },
+  {
+    "epoch": 3,
+    "learning_rate": 0.09997532801828658,
+    "train": {
+      "accuracy": 0.3311,
+      "images_per_second": 4462.750649592617,
+      "loss": 1.7565974609375
+    }
+  },
+  {
+    "epoch": 4,
+    "learning_rate": 0.09994449374809851,
+    "train": {
+      "accuracy": 0.401,
+      "images_per_second": 4423.0836749141345,
+      "loss": 1.596206640625
+    }
+  },
+  {
+    "epoch": 5,
+    "evaluation": {
+      "accuracy": 0.4136,
+      "loss": 1.603746484375
+    },
+    "learning_rate": 0.09990133642141359,
+    "nuisance": {
+      "mean_entropy": 1.3398761749267578,
+      "mean_logit_norm": 6.775030612945557,
+      "mean_max_probability": 0.5095811486244202,
+      "predicted_class_histogram": [
+        312,
+        332,
+        347,
+        880,
+        147,
+        117,
+        985,
+        975,
+        384,
+        521
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-005.safetensors",
+      "sha256": "d91d0eabb45361e31a61e7d8f02b8b484c3818dae58307cf3b5e402451a34730",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 0.4596,
+      "images_per_second": 4407.451773208669,
+      "loss": 1.45982275390625
+    }
+  },
+  {
+    "epoch": 6,
+    "learning_rate": 0.09984586668665642,
+    "train": {
+      "accuracy": 0.4977,
+      "images_per_second": 4333.820086769663,
+      "loss": 1.35382041015625
+    }
+  },
+  {
+    "epoch": 7,
+    "learning_rate": 0.09977809823015402,
+    "train": {
+      "accuracy": 0.5507,
+      "images_per_second": 4302.225920882244,
+      "loss": 1.21598115234375
+    }
+  },
+  {
+    "epoch": 8,
+    "learning_rate": 0.09969804777275901,
+    "train": {
+      "accuracy": 0.5996,
+      "images_per_second": 4254.532829799584,
+      "loss": 1.10714609375
+    }
+  },
+  {
+    "epoch": 9,
+    "learning_rate": 0.09960573506572391,
+    "train": {
+      "accuracy": 0.6607,
+      "images_per_second": 4283.683493566593,
+      "loss": 0.9454724609375
+    }
+  },
+  {
+    "epoch": 10,
+    "evaluation": {
+      "accuracy": 0.487,
+      "loss": 1.738083203125
+    },
+    "learning_rate": 0.09950118288582789,
+    "nuisance": {
+      "mean_entropy": 0.7576570510864258,
+      "mean_logit_norm": 11.04149341583252,
+      "mean_max_probability": 0.723388671875,
+      "predicted_class_histogram": [
+        140,
+        427,
+        352,
+        1508,
+        447,
+        80,
+        597,
+        283,
+        895,
+        271
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-010.safetensors",
+      "sha256": "15390a1ed3408e77fb6eb5bc8999f09ecb5caf736a9bbe4ede6ed9d82fb066d7",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 0.7298,
+      "images_per_second": 4259.620374019412,
+      "loss": 0.747308984375
+    }
+  },
+  {
+    "epoch": 11,
+    "learning_rate": 0.09938441702975691,
+    "train": {
+      "accuracy": 0.7833,
+      "images_per_second": 4176.779921293355,
+      "loss": 0.601516455078125
+    }
+  },
+  {
+    "epoch": 12,
+    "learning_rate": 0.09925546630773871,
+    "train": {
+      "accuracy": 0.8537,
+      "images_per_second": 4176.222753514158,
+      "loss": 0.428257568359375
+    }
+  },
+  {
+    "epoch": 13,
+    "learning_rate": 0.09911436253643445,
+    "train": {
+      "accuracy": 0.8839,
+      "images_per_second": 4134.420866116514,
+      "loss": 0.3236470703125
+    }
+  },
+  {
+    "epoch": 14,
+    "learning_rate": 0.0989611405310883,
+    "train": {
+      "accuracy": 0.9279,
+      "images_per_second": 3846.742300077635,
+      "loss": 0.2048322021484375
+    }
+  },
+  {
+    "epoch": 15,
+    "evaluation": {
+      "accuracy": 0.5512,
+      "loss": 1.994761328125
+    },
+    "learning_rate": 0.09879583809693739,
+    "nuisance": {
+      "mean_entropy": 0.4528576135635376,
+      "mean_logit_norm": 15.95018482208252,
+      "mean_max_probability": 0.8276198506355286,
+      "predicted_class_histogram": [
+        519,
+        367,
+        944,
+        567,
+        559,
+        251,
+        318,
+        536,
+        370,
+        569
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-015.safetensors",
+      "sha256": "bd2a11cecdc6e2616b8c2114553be8a7075b54eea05a2fc64c114b5d93cbffa3",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 0.9512,
+      "images_per_second": 4077.5679735310496,
+      "loss": 0.14339915771484374
+    }
+  },
+  {
+    "epoch": 16,
+    "learning_rate": 0.09861849601988384,
+    "train": {
+      "accuracy": 0.966,
+      "images_per_second": 3962.596925571494,
+      "loss": 0.10441119384765625
+    }
+  },
+  {
+    "epoch": 17,
+    "learning_rate": 0.09842915805643157,
+    "train": {
+      "accuracy": 0.9782,
+      "images_per_second": 3949.5569895867784,
+      "loss": 0.06748663330078125
+    }
+  },
+  {
+    "epoch": 18,
+    "learning_rate": 0.09822787092288993,
+    "train": {
+      "accuracy": 0.9848,
+      "images_per_second": 3927.927132788032,
+      "loss": 0.04623795471191406
+    }
+  },
+  {
+    "epoch": 19,
+    "learning_rate": 0.09801468428384717,
+    "train": {
+      "accuracy": 0.9857,
+      "images_per_second": 3879.1852954437595,
+      "loss": 0.04515139465332031
+    }
+  },
+  {
+    "epoch": 20,
+    "evaluation": {
+      "accuracy": 0.6006,
+      "loss": 2.1683669921875
+    },
+    "learning_rate": 0.09778965073991652,
+    "nuisance": {
+      "mean_entropy": 0.33529940247535706,
+      "mean_logit_norm": 19.100597381591797,
+      "mean_max_probability": 0.8689959049224854,
+      "predicted_class_histogram": [
+        499,
+        547,
+        568,
+        410,
+        565,
+        417,
+        608,
+        535,
+        396,
+        455
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-020.safetensors",
+      "sha256": "f38487b1e91d1d47d2b045ddaac8c030ab55782321e4e81a08767e9a4cc7cf88",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 0.9931,
+      "images_per_second": 3837.5027585264374,
+      "loss": 0.023831103515625
+    }
+  },
+  {
+    "epoch": 21,
+    "learning_rate": 0.0975528258147577,
+    "train": {
+      "accuracy": 0.9957,
+      "images_per_second": 3837.775174063981,
+      "loss": 0.014819493103027343
+    }
+  },
+  {
+    "epoch": 22,
+    "learning_rate": 0.09730426794137728,
+    "train": {
+      "accuracy": 0.9982,
+      "images_per_second": 3777.767884055434,
+      "loss": 0.008657489013671875
+    }
+  },
+  {
+    "epoch": 23,
+    "learning_rate": 0.09704403844771128,
+    "train": {
+      "accuracy": 0.9998,
+      "images_per_second": 3778.552597277421,
+      "loss": 0.002851340103149414
+    }
+  },
+  {
+    "epoch": 24,
+    "learning_rate": 0.09677220154149338,
+    "train": {
+      "accuracy": 0.9999,
+      "images_per_second": 3766.184001639208,
+      "loss": 0.0010396392822265624
+    }
+  },
+  {
+    "epoch": 25,
+    "evaluation": {
+      "accuracy": 0.6198,
+      "loss": 2.05801953125
+    },
+    "learning_rate": 0.09648882429441258,
+    "nuisance": {
+      "mean_entropy": 0.3078535199165344,
+      "mean_logit_norm": 19.184085845947266,
+      "mean_max_probability": 0.8805861473083496,
+      "predicted_class_histogram": [
+        473,
+        548,
+        479,
+        488,
+        485,
+        514,
+        551,
+        460,
+        555,
+        447
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-025.safetensors",
+      "sha256": "64112f03820003d938577deafc6a9c18a5f96cd67194ce72223185cbef44312a",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3724.154004380393,
+      "loss": 0.0005349977970123291
+    }
+  },
+  {
+    "epoch": 26,
+    "learning_rate": 0.09619397662556435,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3657.2242453037147,
+      "loss": 0.0003919370651245117
+    }
+  },
+  {
+    "epoch": 27,
+    "learning_rate": 0.09588773128419906,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3602.681038131229,
+      "loss": 0.00030246295928955077
+    }
+  },
+  {
+    "epoch": 28,
+    "learning_rate": 0.09557016383177226,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3575.7196725656695,
+      "loss": 0.00024054391384124756
+    }
+  },
+  {
+    "epoch": 29,
+    "learning_rate": 0.09524135262330098,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3533.1888133797797,
+      "loss": 0.00022536792755126954
+    }
+  },
+  {
+    "epoch": 30,
+    "evaluation": {
+      "accuracy": 0.6248,
+      "loss": 2.0655306640625
+    },
+    "learning_rate": 0.09490137878803079,
+    "nuisance": {
+      "mean_entropy": 0.30364659428596497,
+      "mean_logit_norm": 19.308883666992188,
+      "mean_max_probability": 0.8823537230491638,
+      "predicted_class_histogram": [
+        497,
+        518,
+        453,
+        507,
+        493,
+        499,
+        538,
+        474,
+        518,
+        503
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-030.safetensors",
+      "sha256": "7f1509f1af94dc059e69ed7f5e6fb94ac1035d56d493b9fee85fa5a515f0b39c",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3481.540298881122,
+      "loss": 0.0002029097080230713
+    }
+  },
+  {
+    "epoch": 31,
+    "learning_rate": 0.0945503262094184,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3352.2227981615893,
+      "loss": 0.00018713960647583007
+    }
+  },
+  {
+    "epoch": 32,
+    "learning_rate": 0.0941882815044347,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3309.19033880474,
+      "loss": 0.00019077465534210206
+    }
+  },
+  {
+    "epoch": 33,
+    "learning_rate": 0.09381533400219319,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3263.7152964958304,
+      "loss": 0.00016763662099838258
+    }
+  },
+  {
+    "epoch": 34,
+    "learning_rate": 0.09343157572190958,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3222.2287071365117,
+      "loss": 0.00015567989349365234
+    }
+  },
+  {
+    "epoch": 35,
+    "evaluation": {
+      "accuracy": 0.6256,
+      "loss": 2.084580859375
+    },
+    "learning_rate": 0.0930371013501972,
+    "nuisance": {
+      "mean_entropy": 0.30024534463882446,
+      "mean_logit_norm": 19.480247497558594,
+      "mean_max_probability": 0.883746862411499,
+      "predicted_class_histogram": [
+        505,
+        512,
+        458,
+        504,
+        509,
+        488,
+        515,
+        474,
+        518,
+        517
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-035.safetensors",
+      "sha256": "6c5e68e9b49ac491dbf6a8fb464948a02292c702e41d9523a3def60a74685c44",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3228.1209216354787,
+      "loss": 0.0001503199577331543
+    }
+  },
+  {
+    "epoch": 36,
+    "learning_rate": 0.09263200821770463,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3373.085536534901,
+      "loss": 0.00014921344518661499
+    }
+  },
+  {
+    "epoch": 37,
+    "learning_rate": 0.09221639627510078,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3473.610496489462,
+      "loss": 0.00013761630058288575
+    }
+  },
+  {
+    "epoch": 38,
+    "learning_rate": 0.09179036806841355,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3518.532343483698,
+      "loss": 0.00013223772048950196
+    }
+  },
+  {
+    "epoch": 39,
+    "learning_rate": 0.09135402871372812,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3597.2226672586294,
+      "loss": 0.0001264967679977417
+    }
+  },
+  {
+    "epoch": 40,
+    "evaluation": {
+      "accuracy": 0.6262,
+      "loss": 2.0984939453125
+    },
+    "learning_rate": 0.0909074858712512,
+    "nuisance": {
+      "mean_entropy": 0.2971508800983429,
+      "mean_logit_norm": 19.557470321655273,
+      "mean_max_probability": 0.884941041469574,
+      "predicted_class_histogram": [
+        502,
+        519,
+        460,
+        487,
+        495,
+        496,
+        540,
+        480,
+        513,
+        508
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-040.safetensors",
+      "sha256": "1a1e33490fd0a819c08187a4cf3ced6a2247dbf94e238af24040e2c9619d72de",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3627.9022680307735,
+      "loss": 0.00011226093769073486
+    }
+  },
+  {
+    "epoch": 41,
+    "learning_rate": 0.09045084971874741,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3726.302413977849,
+      "loss": 0.00012105081081390381
+    }
+  },
+  {
+    "epoch": 42,
+    "learning_rate": 0.08998423292435458,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3750.50117665942,
+      "loss": 0.00011346613168716431
+    }
+  },
+  {
+    "epoch": 43,
+    "learning_rate": 0.08950775061878455,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3746.792750089529,
+      "loss": 0.00011188924312591553
+    }
+  },
+  {
+    "epoch": 44,
+    "learning_rate": 0.08902152036691653,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3778.970250567195,
+      "loss": 0.00010723165273666382
+    }
+  },
+  {
+    "epoch": 45,
+    "evaluation": {
+      "accuracy": 0.6266,
+      "loss": 2.1084412109375
+    },
+    "learning_rate": 0.08852566213878951,
+    "nuisance": {
+      "mean_entropy": 0.29493841528892517,
+      "mean_logit_norm": 19.673015594482422,
+      "mean_max_probability": 0.8858514428138733,
+      "predicted_class_histogram": [
+        506,
+        518,
+        466,
+        487,
+        501,
+        498,
+        527,
+        476,
+        510,
+        511
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-045.safetensors",
+      "sha256": "5b60947fa011bb98faf86a6197afce9c193d1b1b96d1f11ceae0ce25884dc36d",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3782.6883863378243,
+      "loss": 9.940515756607056e-05
+    }
+  },
+  {
+    "epoch": 46,
+    "learning_rate": 0.0880202982800016,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3774.58947632802,
+      "loss": 9.597941637039184e-05
+    }
+  },
+  {
+    "epoch": 47,
+    "learning_rate": 0.08750555348152303,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3749.052825703784,
+      "loss": 9.305263757705688e-05
+    }
+  },
+  {
+    "epoch": 48,
+    "learning_rate": 0.08698155474893052,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3738.9160800251357,
+      "loss": 0.00010590181350708007
+    }
+  },
+  {
+    "epoch": 49,
+    "learning_rate": 0.08644843137107061,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3713.898100895481,
+      "loss": 9.45176362991333e-05
+    }
+  },
+  {
+    "epoch": 50,
+    "evaluation": {
+      "accuracy": 0.6282,
+      "loss": 2.1191546875
+    },
+    "learning_rate": 0.08590631488815947,
+    "nuisance": {
+      "mean_entropy": 0.2927211821079254,
+      "mean_logit_norm": 19.773874282836914,
+      "mean_max_probability": 0.8867676854133606,
+      "predicted_class_histogram": [
+        506,
+        513,
+        468,
+        484,
+        511,
+        491,
+        523,
+        484,
+        515,
+        505
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-050.safetensors",
+      "sha256": "7f4d7387065464618bdcc0ab38ace8d62e8bd07b64a043489930ad83d5b4c749",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3706.7964583456283,
+      "loss": 8.902652263641357e-05
+    }
+  },
+  {
+    "epoch": 51,
+    "learning_rate": 0.0853553390593274,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3616.5285292004805,
+      "loss": 9.00957703590393e-05
+    }
+  },
+  {
+    "epoch": 52,
+    "learning_rate": 0.08479563982961574,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3590.9842186244796,
+      "loss": 8.372796773910522e-05
+    }
+  },
+  {
+    "epoch": 53,
+    "learning_rate": 0.08422735529643446,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3555.425763868896,
+      "loss": 8.118572235107422e-05
+    }
+  },
+  {
+    "epoch": 54,
+    "learning_rate": 0.08365062567548869,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3486.8820319664746,
+      "loss": 8.559420108795166e-05
+    }
+  },
+  {
+    "epoch": 55,
+    "evaluation": {
+      "accuracy": 0.6276,
+      "loss": 2.141234765625
+    },
+    "learning_rate": 0.08306559326618261,
+    "nuisance": {
+      "mean_entropy": 0.2903062403202057,
+      "mean_logit_norm": 19.895227432250977,
+      "mean_max_probability": 0.8873035311698914,
+      "predicted_class_histogram": [
+        501,
+        512,
+        454,
+        485,
+        510,
+        504,
+        520,
+        490,
+        509,
+        515
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-055.safetensors",
+      "sha256": "cdcba3443b00f40cb96e29fc105b5d03faf4d1eb03e55c07e56ab3eada2c4a11",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3480.5272181926725,
+      "loss": 0.0001017444372177124
+    }
+  },
+  {
+    "epoch": 56,
+    "learning_rate": 0.0824724024165092,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3427.601248584205,
+      "loss": 8.806780576705933e-05
+    }
+  },
+  {
+    "epoch": 57,
+    "learning_rate": 0.0818711994874345,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3420.8404608811,
+      "loss": 8.222543001174926e-05
+    }
+  },
+  {
+    "epoch": 58,
+    "learning_rate": 0.08126213281678528,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3433.0924637210487,
+      "loss": 7.677748203277588e-05
+    }
+  },
+  {
+    "epoch": 59,
+    "learning_rate": 0.08064535268264884,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3480.0601805137835,
+      "loss": 7.845323085784912e-05
+    }
+  },
+  {
+    "epoch": 60,
+    "evaluation": {
+      "accuracy": 0.6292,
+      "loss": 2.1407271484375
+    },
+    "learning_rate": 0.08002101126629421,
+    "nuisance": {
+      "mean_entropy": 0.2887570261955261,
+      "mean_logit_norm": 19.925180435180664,
+      "mean_max_probability": 0.8881704807281494,
+      "predicted_class_histogram": [
+        505,
+        524,
+        452,
+        486,
+        512,
+        482,
+        535,
+        482,
+        511,
+        511
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-060.safetensors",
+      "sha256": "bbb2ad7de59225d0a477ded07e557658343b9a677737273ae62bf5295ded08bb",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3505.0445179033227,
+      "loss": 7.322450876235962e-05
+    }
+  },
+  {
+    "epoch": 61,
+    "learning_rate": 0.07938926261462367,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3606.684411332683,
+      "loss": 7.188665866851807e-05
+    }
+  },
+  {
+    "epoch": 62,
+    "learning_rate": 0.07875026260216395,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3622.9249115185294,
+      "loss": 6.794184446334839e-05
+    }
+  },
+  {
+    "epoch": 63,
+    "learning_rate": 0.07810416889260656,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3634.461830860637,
+      "loss": 7.272061109542847e-05
+    }
+  },
+  {
+    "epoch": 64,
+    "learning_rate": 0.07745114089990661,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3648.078885871004,
+      "loss": 6.558758020401001e-05
+    }
+  },
+  {
+    "epoch": 65,
+    "evaluation": {
+      "accuracy": 0.6262,
+      "loss": 2.1414888671875
+    },
+    "learning_rate": 0.07679133974894985,
+    "nuisance": {
+      "mean_entropy": 0.28866955637931824,
+      "mean_logit_norm": 19.938316345214844,
+      "mean_max_probability": 0.8881388902664185,
+      "predicted_class_histogram": [
+        509,
+        510,
+        467,
+        493,
+        514,
+        480,
+        532,
+        475,
+        509,
+        511
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-065.safetensors",
+      "sha256": "da1f1913867a7b4ee65962b3c93333f5023790476dcb657f93d58fd4777713ca",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3673.031414139953,
+      "loss": 6.602706909179687e-05
+    }
+  },
+  {
+    "epoch": 66,
+    "learning_rate": 0.07612492823579746,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3682.5546315136808,
+      "loss": 6.401519775390624e-05
+    }
+  },
+  {
+    "epoch": 67,
+    "learning_rate": 0.07545207078751859,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3674.1815798650496,
+      "loss": 6.429697275161744e-05
+    }
+  },
+  {
+    "epoch": 68,
+    "learning_rate": 0.0747729334216204,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3670.8332275673706,
+      "loss": 6.690751314163208e-05
+    }
+  },
+  {
+    "epoch": 69,
+    "learning_rate": 0.07408768370508578,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3680.926126019506,
+      "loss": 6.15788459777832e-05
+    }
+  },
+  {
+    "epoch": 70,
+    "evaluation": {
+      "accuracy": 0.6276,
+      "loss": 2.1533396484375
+    },
+    "learning_rate": 0.0733964907130287,
+    "nuisance": {
+      "mean_entropy": 0.28625619411468506,
+      "mean_logit_norm": 20.042043685913086,
+      "mean_max_probability": 0.8889831304550171,
+      "predicted_class_histogram": [
+        499,
+        513,
+        457,
+        483,
+        521,
+        488,
+        535,
+        478,
+        516,
+        510
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-070.safetensors",
+      "sha256": "c0d7e5d18fc20a15f8e28768441b2c39058e4e95012af4d9248953d1875d9155",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3681.197687268152,
+      "loss": 6.192034482955933e-05
+    }
+  },
+  {
+    "epoch": 71,
+    "learning_rate": 0.07269952498697736,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3653.049233639026,
+      "loss": 5.72679877281189e-05
+    }
+  },
+  {
+    "epoch": 72,
+    "learning_rate": 0.07199695849279578,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3639.2649364498884,
+      "loss": 6.315600872039796e-05
+    }
+  },
+  {
+    "epoch": 73,
+    "learning_rate": 0.07128896457825366,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3612.9737005180136,
+      "loss": 6.25166654586792e-05
+    }
+  },
+  {
+    "epoch": 74,
+    "learning_rate": 0.07057571793025548,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3599.4216424829247,
+      "loss": 5.50592303276062e-05
+    }
+  },
+  {
+    "epoch": 75,
+    "evaluation": {
+      "accuracy": 0.6284,
+      "loss": 2.1550423828125
+    },
+    "learning_rate": 0.06985739453173906,
+    "nuisance": {
+      "mean_entropy": 0.28606826066970825,
+      "mean_logit_norm": 20.037883758544922,
+      "mean_max_probability": 0.8892386555671692,
+      "predicted_class_histogram": [
+        498,
+        519,
+        461,
+        496,
+        511,
+        478,
+        536,
+        473,
+        516,
+        512
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-075.safetensors",
+      "sha256": "16aa74bb6dc38c8c09925f5dcc61b5a9fcd50d9052263141c8313b7df2dd602f",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3609.953102633424,
+      "loss": 5.546597242355347e-05
+    }
+  },
+  {
+    "epoch": 76,
+    "learning_rate": 0.06913417161825453,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3600.414955456444,
+      "loss": 5.8743011951446536e-05
+    }
+  },
+  {
+    "epoch": 77,
+    "learning_rate": 0.06840622763423394,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3575.3188810106158,
+      "loss": 6.0560107231140135e-05
+    }
+  },
+  {
+    "epoch": 78,
+    "learning_rate": 0.0676737421889629,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3587.8949770871045,
+      "loss": 5.281456708908081e-05
+    }
+  },
+  {
+    "epoch": 79,
+    "learning_rate": 0.06693689601226462,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3557.344612145784,
+      "loss": 7.199814319610596e-05
+    }
+  },
+  {
+    "epoch": 80,
+    "evaluation": {
+      "accuracy": 0.6282,
+      "loss": 2.165393359375
+    },
+    "learning_rate": 0.06619587090990751,
+    "nuisance": {
+      "mean_entropy": 0.284423291683197,
+      "mean_logit_norm": 20.091886520385742,
+      "mean_max_probability": 0.8896623253822327,
+      "predicted_class_histogram": [
+        498,
+        511,
+        454,
+        472,
+        517,
+        499,
+        539,
+        478,
+        516,
+        516
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-080.safetensors",
+      "sha256": "e2cc1ed871c1f27c947839976a5fe7d0734d53b67a35336a6e8c788f0b22290c",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3547.216436281589,
+      "loss": 5.785837173461914e-05
+    }
+  },
+  {
+    "epoch": 81,
+    "learning_rate": 0.06545084971874741,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3553.836990747619,
+      "loss": 5.496736764907837e-05
+    }
+  },
+  {
+    "epoch": 82,
+    "learning_rate": 0.06470201626161524,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3575.132867462396,
+      "loss": 5.547424554824829e-05
+    }
+  },
+  {
+    "epoch": 83,
+    "learning_rate": 0.06394955530196152,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3581.320562535203,
+      "loss": 5.369799137115478e-05
+    }
+  },
+  {
+    "epoch": 84,
+    "learning_rate": 0.06319365249826868,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3589.5001496593845,
+      "loss": 5.373380184173584e-05
+    }
+  },
+  {
+    "epoch": 85,
+    "evaluation": {
+      "accuracy": 0.6286,
+      "loss": 2.165636328125
+    },
+    "learning_rate": 0.06243449435824277,
+    "nuisance": {
+      "mean_entropy": 0.284761905670166,
+      "mean_logit_norm": 20.115234375,
+      "mean_max_probability": 0.8896300792694092,
+      "predicted_class_histogram": [
+        511,
+        508,
+        468,
+        476,
+        509,
+        493,
+        535,
+        479,
+        510,
+        511
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-085.safetensors",
+      "sha256": "8d9e57acae2b09527b1cb6052db7fb43aec2a386090a35bbff1306645aa57e3d",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3608.6125411671906,
+      "loss": 5.358456373214722e-05
+    }
+  },
+  {
+    "epoch": 86,
+    "learning_rate": 0.06167226819279532,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3601.1691820912324,
+      "loss": 5.298234224319458e-05
+    }
+  },
+  {
+    "epoch": 87,
+    "learning_rate": 0.06090716206982718,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3611.2795428943227,
+      "loss": 4.833706617355347e-05
+    }
+  },
+  {
+    "epoch": 88,
+    "learning_rate": 0.06013936476782568,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3619.541179062328,
+      "loss": 4.876689910888672e-05
+    }
+  },
+  {
+    "epoch": 89,
+    "learning_rate": 0.05936906572928629,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3623.1727487023345,
+      "loss": 5.013240575790405e-05
+    }
+  },
+  {
+    "epoch": 90,
+    "evaluation": {
+      "accuracy": 0.628,
+      "loss": 2.1698134765625
+    },
+    "learning_rate": 0.05859645501397052,
+    "nuisance": {
+      "mean_entropy": 0.2837522029876709,
+      "mean_logit_norm": 20.146982192993164,
+      "mean_max_probability": 0.8901786208152771,
+      "predicted_class_histogram": [
+        503,
+        512,
+        463,
+        473,
+        507,
+        501,
+        529,
+        486,
+        513,
+        513
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-090.safetensors",
+      "sha256": "63557bb5352e65431c9de2fbb8310f1dc40e0bc3f8eb25392cb7bb2a58938ce1",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3636.6458585960604,
+      "loss": 4.6904027462005614e-05
+    }
+  },
+  {
+    "epoch": 91,
+    "learning_rate": 0.05782172325201159,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3640.338736679235,
+      "loss": 5.289924144744873e-05
+    }
+  },
+  {
+    "epoch": 92,
+    "learning_rate": 0.057045061596879186,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3624.495280605305,
+      "loss": 4.874265193939209e-05
+    }
+  },
+  {
+    "epoch": 93,
+    "learning_rate": 0.056266661678215264,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3623.403660918263,
+      "loss": 5.087058544158936e-05
+    }
+  },
+  {
+    "epoch": 94,
+    "learning_rate": 0.055486715554552306,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3624.1058967889885,
+      "loss": 4.812803268432617e-05
+    }
+  },
+  {
+    "epoch": 95,
+    "evaluation": {
+      "accuracy": 0.6284,
+      "loss": 2.1738130859375
+    },
+    "learning_rate": 0.05470541566592575,
+    "nuisance": {
+      "mean_entropy": 0.2829285264015198,
+      "mean_logit_norm": 20.196422576904297,
+      "mean_max_probability": 0.8904333710670471,
+      "predicted_class_histogram": [
+        493,
+        515,
+        464,
+        478,
+        511,
+        500,
+        528,
+        482,
+        520,
+        509
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-095.safetensors",
+      "sha256": "2ccd3fc70a0af0badb182cb1d488abfeb87b7e2fecdbabe49852a72810297972",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3610.391962752149,
+      "loss": 4.5532524585723876e-05
+    }
+  },
+  {
+    "epoch": 96,
+    "learning_rate": 0.05392295478639229,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3588.8443177472755,
+      "loss": 4.577507972717285e-05
+    }
+  },
+  {
+    "epoch": 97,
+    "learning_rate": 0.05313952597646571,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3588.8018728566503,
+      "loss": 5.302585363388062e-05
+    }
+  },
+  {
+    "epoch": 98,
+    "learning_rate": 0.05235532253548216,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3594.497919145012,
+      "loss": 4.4555997848510745e-05
+    }
+  },
+  {
+    "epoch": 99,
+    "learning_rate": 0.051570537953906447,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3599.9906322483184,
+      "loss": 4.674386978149414e-05
+    }
+  },
+  {
+    "epoch": 100,
+    "evaluation": {
+      "accuracy": 0.6294,
+      "loss": 2.174499609375
+    },
+    "learning_rate": 0.05078536586559106,
+    "nuisance": {
+      "mean_entropy": 0.28319278359413147,
+      "mean_logit_norm": 20.178457260131836,
+      "mean_max_probability": 0.8902291059494019,
+      "predicted_class_histogram": [
+        500,
+        513,
+        453,
+        485,
+        516,
+        494,
+        529,
+        483,
+        518,
+        509
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-100.safetensors",
+      "sha256": "8a5d9902f3b61f66d0ef3b2b4d7e874c16634c4187a0fc9a9b96881d0145cc0c",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3585.9146934704722,
+      "loss": 4.6558678150177e-05
+    }
+  },
+  {
+    "epoch": 101,
+    "learning_rate": 0.050000000000000024,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3576.3878424353534,
+      "loss": 4.218562841415405e-05
+    }
+  },
+  {
+    "epoch": 102,
+    "learning_rate": 0.049214634134409,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3568.9137873128757,
+      "loss": 4.440116882324219e-05
+    }
+  },
+  {
+    "epoch": 103,
+    "learning_rate": 0.04842946204609361,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3555.4817608205244,
+      "loss": 4.24601674079895e-05
+    }
+  },
+  {
+    "epoch": 104,
+    "learning_rate": 0.04764467746451789,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3575.70826513701,
+      "loss": 4.343496561050415e-05
+    }
+  },
+  {
+    "epoch": 105,
+    "evaluation": {
+      "accuracy": 0.6268,
+      "loss": 2.17994921875
+    },
+    "learning_rate": 0.046860474023534354,
+    "nuisance": {
+      "mean_entropy": 0.2818012833595276,
+      "mean_logit_norm": 20.22657012939453,
+      "mean_max_probability": 0.8907442092895508,
+      "predicted_class_histogram": [
+        501,
+        518,
+        461,
+        474,
+        508,
+        504,
+        524,
+        484,
+        515,
+        511
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-105.safetensors",
+      "sha256": "aa8ecb5136fdf1a5d8b8fa21dac497a98c1add395e363e2440bb21a665559e83",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3550.280790092246,
+      "loss": 4.521501064300537e-05
+    }
+  },
+  {
+    "epoch": 106,
+    "learning_rate": 0.04607704521360778,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3570.899842317456,
+      "loss": 4.8800420761108396e-05
+    }
+  },
+  {
+    "epoch": 107,
+    "learning_rate": 0.04529458433407431,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3540.0270121477633,
+      "loss": 4.207416772842407e-05
+    }
+  },
+  {
+    "epoch": 108,
+    "learning_rate": 0.04451328444544776,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3560.2664139952494,
+      "loss": 4.535537958145142e-05
+    }
+  },
+  {
+    "epoch": 109,
+    "learning_rate": 0.04373333832178482,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3587.0977960766886,
+      "loss": 4.172687530517578e-05
+    }
+  },
+  {
+    "epoch": 110,
+    "evaluation": {
+      "accuracy": 0.6282,
+      "loss": 2.181894140625
+    },
+    "learning_rate": 0.0429549384031209,
+    "nuisance": {
+      "mean_entropy": 0.28116992115974426,
+      "mean_logit_norm": 20.257469177246094,
+      "mean_max_probability": 0.8911437392234802,
+      "predicted_class_histogram": [
+        497,
+        522,
+        458,
+        490,
+        513,
+        488,
+        530,
+        477,
+        519,
+        506
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-110.safetensors",
+      "sha256": "ad25fd640d7a55901eeb673b1958a73bac53296c8ece1630ebf4d30201b135f1",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3582.1956280019526,
+      "loss": 5.1710045337677004e-05
+    }
+  },
+  {
+    "epoch": 111,
+    "learning_rate": 0.042178276747988484,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3577.5359056315183,
+      "loss": 4.3803906440734863e-05
+    }
+  },
+  {
+    "epoch": 112,
+    "learning_rate": 0.04140354498602954,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3578.493337774788,
+      "loss": 4.357227087020874e-05
+    }
+  },
+  {
+    "epoch": 113,
+    "learning_rate": 0.0406309342707138,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3600.1779752302905,
+      "loss": 4.263101816177368e-05
+    }
+  },
+  {
+    "epoch": 114,
+    "learning_rate": 0.03986063523217441,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3585.6298477374394,
+      "loss": 4.1213691234588624e-05
+    }
+  },
+  {
+    "epoch": 115,
+    "evaluation": {
+      "accuracy": 0.6282,
+      "loss": 2.1785044921875
+    },
+    "learning_rate": 0.039092837930172916,
+    "nuisance": {
+      "mean_entropy": 0.2822495400905609,
+      "mean_logit_norm": 20.19228744506836,
+      "mean_max_probability": 0.8904212117195129,
+      "predicted_class_histogram": [
+        497,
+        510,
+        471,
+        483,
+        516,
+        489,
+        534,
+        474,
+        516,
+        510
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-115.safetensors",
+      "sha256": "4e52180446238ab208d751885d1ee58ffa24d3564b3bc337eafff05bbf3ec727",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3590.1991571108897,
+      "loss": 4.328697919845581e-05
+    }
+  },
+  {
+    "epoch": 116,
+    "learning_rate": 0.03832773180720475,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3601.546261508567,
+      "loss": 4.193991422653198e-05
+    }
+  },
+  {
+    "epoch": 117,
+    "learning_rate": 0.037565505641757285,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3587.541963626382,
+      "loss": 4.2669999599456784e-05
+    }
+  },
+  {
+    "epoch": 118,
+    "learning_rate": 0.03680634750173138,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3585.9067930508036,
+      "loss": 3.890209197998047e-05
+    }
+  },
+  {
+    "epoch": 119,
+    "learning_rate": 0.036050444698038565,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3590.7308464586317,
+      "loss": 4.45461630821228e-05
+    }
+  },
+  {
+    "epoch": 120,
+    "evaluation": {
+      "accuracy": 0.6278,
+      "loss": 2.1827951171875
+    },
+    "learning_rate": 0.03529798373838483,
+    "nuisance": {
+      "mean_entropy": 0.28103014826774597,
+      "mean_logit_norm": 20.23947525024414,
+      "mean_max_probability": 0.8911134600639343,
+      "predicted_class_histogram": [
+        498,
+        513,
+        475,
+        475,
+        518,
+        495,
+        535,
+        480,
+        507,
+        504
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-120.safetensors",
+      "sha256": "15d7a977ba5cbdb4429fc167570d6ee73697610f939569f2dd8649074f33e69c",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3612.1903462921273,
+      "loss": 4.0113842487335206e-05
+    }
+  },
+  {
+    "epoch": 121,
+    "learning_rate": 0.03454915028125267,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3609.251844725131,
+      "loss": 3.7543046474456786e-05
+    }
+  },
+  {
+    "epoch": 122,
+    "learning_rate": 0.03380412909009255,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3606.459182388681,
+      "loss": 4.140801429748535e-05
+    }
+  },
+  {
+    "epoch": 123,
+    "learning_rate": 0.03306310398773545,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3586.121726704915,
+      "loss": 4.093536138534546e-05
+    }
+  },
+  {
+    "epoch": 124,
+    "learning_rate": 0.03232625781103717,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3583.0268754920226,
+      "loss": 4.235825538635254e-05
+    }
+  },
+  {
+    "epoch": 125,
+    "evaluation": {
+      "accuracy": 0.6272,
+      "loss": 2.1878947265625
+    },
+    "learning_rate": 0.03159377236576613,
+    "nuisance": {
+      "mean_entropy": 0.2803816497325897,
+      "mean_logit_norm": 20.30613136291504,
+      "mean_max_probability": 0.8914490342140198,
+      "predicted_class_histogram": [
+        499,
+        510,
+        465,
+        472,
+        520,
+        507,
+        525,
+        486,
+        511,
+        505
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-125.safetensors",
+      "sha256": "5f4527fe8f003ee56ea47d650702bbd639539d9865012a643b77e27aa306eb30",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3606.9398318778376,
+      "loss": 4.160535335540772e-05
+    }
+  },
+  {
+    "epoch": 126,
+    "learning_rate": 0.030865828381745543,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3612.0405075953786,
+      "loss": 3.836406469345093e-05
+    }
+  },
+  {
+    "epoch": 127,
+    "learning_rate": 0.03014260546826098,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3601.1825681436967,
+      "loss": 4.009281396865845e-05
+    }
+  },
+  {
+    "epoch": 128,
+    "learning_rate": 0.02942428206974458,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3597.1025077430027,
+      "loss": 4.0859723091125486e-05
+    }
+  },
+  {
+    "epoch": 129,
+    "learning_rate": 0.028711035421746387,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3609.6785390922932,
+      "loss": 4.089162349700928e-05
+    }
+  },
+  {
+    "epoch": 130,
+    "evaluation": {
+      "accuracy": 0.6284,
+      "loss": 2.1836486328125
+    },
+    "learning_rate": 0.02800304150720426,
+    "nuisance": {
+      "mean_entropy": 0.2807546854019165,
+      "mean_logit_norm": 20.26773452758789,
+      "mean_max_probability": 0.8910704851150513,
+      "predicted_class_histogram": [
+        497,
+        512,
+        473,
+        479,
+        517,
+        496,
+        533,
+        480,
+        510,
+        503
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-130.safetensors",
+      "sha256": "d28142f14aea6871570196bc3099f949e17ca3dc4e96949534b150d69b556532",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3595.5176200577944,
+      "loss": 3.8589441776275636e-05
+    }
+  },
+  {
+    "epoch": 131,
+    "learning_rate": 0.02730047501302268,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3600.846552831114,
+      "loss": 4.299994707107544e-05
+    }
+  },
+  {
+    "epoch": 132,
+    "learning_rate": 0.026603509286971357,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3602.8147780189456,
+      "loss": 3.66490364074707e-05
+    }
+  },
+  {
+    "epoch": 133,
+    "learning_rate": 0.025912316294914244,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3598.376908626738,
+      "loss": 3.901026248931885e-05
+    }
+  },
+  {
+    "epoch": 134,
+    "learning_rate": 0.025227066578379632,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3584.015985009457,
+      "loss": 4.020774364471435e-05
+    }
+  },
+  {
+    "epoch": 135,
+    "evaluation": {
+      "accuracy": 0.628,
+      "loss": 2.187664453125
+    },
+    "learning_rate": 0.024547929212481445,
+    "nuisance": {
+      "mean_entropy": 0.28087684512138367,
+      "mean_logit_norm": 20.257217407226562,
+      "mean_max_probability": 0.890939474105835,
+      "predicted_class_histogram": [
+        503,
+        512,
+        468,
+        486,
+        516,
+        481,
+        535,
+        473,
+        517,
+        509
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-135.safetensors",
+      "sha256": "9080cd26ea8c0b991c7d58c5d971dcc9099b9e97b1115713156eec5d82391209",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3607.6583802128316,
+      "loss": 3.6880147457122805e-05
+    }
+  },
+  {
+    "epoch": 136,
+    "learning_rate": 0.02387507176420257,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3589.6256066656083,
+      "loss": 3.849515914916992e-05
+    }
+  },
+  {
+    "epoch": 137,
+    "learning_rate": 0.023208660251050166,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3616.312076171461,
+      "loss": 3.689730167388916e-05
+    }
+  },
+  {
+    "epoch": 138,
+    "learning_rate": 0.022548859100093414,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3613.060786958578,
+      "loss": 3.76070499420166e-05
+    }
+  },
+  {
+    "epoch": 139,
+    "learning_rate": 0.021895831107393474,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3609.456990417235,
+      "loss": 3.941173553466797e-05
+    }
+  },
+  {
+    "epoch": 140,
+    "evaluation": {
+      "accuracy": 0.6274,
+      "loss": 2.190176953125
+    },
+    "learning_rate": 0.02124973739783608,
+    "nuisance": {
+      "mean_entropy": 0.28009700775146484,
+      "mean_logit_norm": 20.312108993530273,
+      "mean_max_probability": 0.8914648294448853,
+      "predicted_class_histogram": [
+        494,
+        513,
+        467,
+        489,
+        515,
+        493,
+        529,
+        477,
+        514,
+        509
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-140.safetensors",
+      "sha256": "078cdacd51097d688773646eff6bdb53691bfd8aff6cd28337111c97febe3534",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3611.196195006108,
+      "loss": 3.8510775566101076e-05
+    }
+  },
+  {
+    "epoch": 141,
+    "learning_rate": 0.02061073738537636,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3606.5841029015896,
+      "loss": 3.744897842407226e-05
+    }
+  },
+  {
+    "epoch": 142,
+    "learning_rate": 0.019978988733705814,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3578.1745255862124,
+      "loss": 3.8329994678497315e-05
+    }
+  },
+  {
+    "epoch": 143,
+    "learning_rate": 0.01935464731735118,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3602.8763574926998,
+      "loss": 3.672487735748291e-05
+    }
+  },
+  {
+    "epoch": 144,
+    "learning_rate": 0.018737867183214747,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3585.33411950774,
+      "loss": 3.636513948440552e-05
+    }
+  },
+  {
+    "epoch": 145,
+    "evaluation": {
+      "accuracy": 0.6276,
+      "loss": 2.1863734375
+    },
+    "learning_rate": 0.01812880051256552,
+    "nuisance": {
+      "mean_entropy": 0.2809232473373413,
+      "mean_logit_norm": 20.272863388061523,
+      "mean_max_probability": 0.8912220001220703,
+      "predicted_class_histogram": [
+        496,
+        507,
+        461,
+        478,
+        516,
+        504,
+        528,
+        484,
+        518,
+        508
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-145.safetensors",
+      "sha256": "4eb460c1802a096af05e4f7914fee25400a90448efa1918f62bb3ff9a563f878",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3610.877424051095,
+      "loss": 3.5117149353027344e-05
+    }
+  },
+  {
+    "epoch": 146,
+    "learning_rate": 0.017527597583490827,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3600.0591462355787,
+      "loss": 3.7534749507904054e-05
+    }
+  },
+  {
+    "epoch": 147,
+    "learning_rate": 0.01693440673381742,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3586.0643913978824,
+      "loss": 3.866747617721558e-05
+    }
+  },
+  {
+    "epoch": 148,
+    "learning_rate": 0.016349374324511334,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3588.0088513121455,
+      "loss": 3.695664405822754e-05
+    }
+  },
+  {
+    "epoch": 149,
+    "learning_rate": 0.01577264470356557,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3587.628045884422,
+      "loss": 3.6390209197998045e-05
+    }
+  },
+  {
+    "epoch": 150,
+    "evaluation": {
+      "accuracy": 0.6274,
+      "loss": 2.19031015625
+    },
+    "learning_rate": 0.01520436017038429,
+    "nuisance": {
+      "mean_entropy": 0.28003033995628357,
+      "mean_logit_norm": 20.303600311279297,
+      "mean_max_probability": 0.8913695216178894,
+      "predicted_class_histogram": [
+        495,
+        512,
+        474,
+        481,
+        516,
+        494,
+        532,
+        476,
+        512,
+        508
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-150.safetensors",
+      "sha256": "2cd7d22c24d5fefd680fe48f75adbaae0b8865a5b34fff61299089db8e7e97bf",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3589.566350211111,
+      "loss": 3.673793077468872e-05
+    }
+  },
+  {
+    "epoch": 151,
+    "learning_rate": 0.014644660940672632,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3580.9457609636843,
+      "loss": 3.923159837722778e-05
+    }
+  },
+  {
+    "epoch": 152,
+    "learning_rate": 0.01409368511184057,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3586.3071003464515,
+      "loss": 3.6757099628448484e-05
+    }
+  },
+  {
+    "epoch": 153,
+    "learning_rate": 0.013551568628929438,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3603.732456193805,
+      "loss": 3.52916955947876e-05
+    }
+  },
+  {
+    "epoch": 154,
+    "learning_rate": 0.013018445251069516,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3581.0141392722644,
+      "loss": 3.9355289936065674e-05
+    }
+  },
+  {
+    "epoch": 155,
+    "evaluation": {
+      "accuracy": 0.629,
+      "loss": 2.1925115234375
+    },
+    "learning_rate": 0.012494446518477026,
+    "nuisance": {
+      "mean_entropy": 0.279694527387619,
+      "mean_logit_norm": 20.315393447875977,
+      "mean_max_probability": 0.8916800022125244,
+      "predicted_class_histogram": [
+        497,
+        516,
+        465,
+        475,
+        523,
+        498,
+        526,
+        482,
+        517,
+        501
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-155.safetensors",
+      "sha256": "e51d6582a1c93097687efe7c4cccfd97236d75ea7253f2d02f4aff2aca36eb60",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3588.2958674856736,
+      "loss": 3.6962223052978515e-05
+    }
+  },
+  {
+    "epoch": 156,
+    "learning_rate": 0.011979701719998459,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3565.7120219149465,
+      "loss": 3.56532096862793e-05
+    }
+  },
+  {
+    "epoch": 157,
+    "learning_rate": 0.011474337861210548,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3561.682887371059,
+      "loss": 3.6183357238769534e-05
+    }
+  },
+  {
+    "epoch": 158,
+    "learning_rate": 0.010978479633083526,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3560.885558694998,
+      "loss": 3.499753475189209e-05
+    }
+  },
+  {
+    "epoch": 159,
+    "learning_rate": 0.010492249381215483,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3556.2172382952203,
+      "loss": 3.5770201683044436e-05
+    }
+  },
+  {
+    "epoch": 160,
+    "evaluation": {
+      "accuracy": 0.6296,
+      "loss": 2.190599609375
+    },
+    "learning_rate": 0.010015767075645474,
+    "nuisance": {
+      "mean_entropy": 0.2799980342388153,
+      "mean_logit_norm": 20.297151565551758,
+      "mean_max_probability": 0.8913638591766357,
+      "predicted_class_histogram": [
+        493,
+        509,
+        458,
+        481,
+        515,
+        499,
+        537,
+        480,
+        518,
+        510
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-160.safetensors",
+      "sha256": "1618719822c6d4d39273bc1c597b8342d6bc173efa802efb4b9f3405ec8758e6",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3559.850040932605,
+      "loss": 3.835458755493164e-05
+    }
+  },
+  {
+    "epoch": 161,
+    "learning_rate": 0.009549150281252637,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3581.5174104987486,
+      "loss": 3.625043630599976e-05
+    }
+  },
+  {
+    "epoch": 162,
+    "learning_rate": 0.00909251412874884,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3586.990751300138,
+      "loss": 3.6744904518127444e-05
+    }
+  },
+  {
+    "epoch": 163,
+    "learning_rate": 0.008645971286271918,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3585.42525980026,
+      "loss": 3.8490593433380126e-05
+    }
+  },
+  {
+    "epoch": 164,
+    "learning_rate": 0.008209631931586501,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3593.3857794143005,
+      "loss": 3.586474657058716e-05
+    }
+  },
+  {
+    "epoch": 165,
+    "evaluation": {
+      "accuracy": 0.6286,
+      "loss": 2.1917875
+    },
+    "learning_rate": 0.0077836037248992605,
+    "nuisance": {
+      "mean_entropy": 0.2800401747226715,
+      "mean_logit_norm": 20.319164276123047,
+      "mean_max_probability": 0.8914777636528015,
+      "predicted_class_histogram": [
+        501,
+        510,
+        468,
+        483,
+        520,
+        493,
+        527,
+        482,
+        508,
+        508
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-165.safetensors",
+      "sha256": "9f30523f3ab77ac9e7a32851bd3b8c9cb9569024e472b4452478dfa46c4b9e02",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3601.4514372224635,
+      "loss": 3.5624730587005616e-05
+    }
+  },
+  {
+    "epoch": 166,
+    "learning_rate": 0.0073679917822954055,
+    "train": {
+      "accuracy": 0.9999,
+      "images_per_second": 3594.9209329279997,
+      "loss": 0.0002381626844406128
+    }
+  },
+  {
+    "epoch": 167,
+    "learning_rate": 0.006962898649802815,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3611.245687893064,
+      "loss": 3.586676120758057e-05
+    }
+  },
+  {
+    "epoch": 168,
+    "learning_rate": 0.006568424278090438,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3589.3016219166802,
+      "loss": 3.661394119262695e-05
+    }
+  },
+  {
+    "epoch": 169,
+    "learning_rate": 0.006184665997806824,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3585.870772259482,
+      "loss": 3.561041355133056e-05
+    }
+  },
+  {
+    "epoch": 170,
+    "evaluation": {
+      "accuracy": 0.6288,
+      "loss": 2.190708203125
+    },
+    "learning_rate": 0.00581171849556533,
+    "nuisance": {
+      "mean_entropy": 0.280059814453125,
+      "mean_logit_norm": 20.291622161865234,
+      "mean_max_probability": 0.8913332223892212,
+      "predicted_class_histogram": [
+        505,
+        503,
+        468,
+        472,
+        518,
+        503,
+        536,
+        483,
+        503,
+        509
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-170.safetensors",
+      "sha256": "922bb9012453fbbf66cd411142ee2feae469f1b3552d775e2ce823beffe5ec8b",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3612.430470060619,
+      "loss": 3.550342321395874e-05
+    }
+  },
+  {
+    "epoch": 171,
+    "learning_rate": 0.0054496737905816136,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3605.49985226152,
+      "loss": 3.687725067138672e-05
+    }
+  },
+  {
+    "epoch": 172,
+    "learning_rate": 0.005098621211969226,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3600.1742734920654,
+      "loss": 3.6437618732452396e-05
+    }
+  },
+  {
+    "epoch": 173,
+    "learning_rate": 0.004758647376699035,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3610.062587084563,
+      "loss": 3.7563562393188476e-05
+    }
+  },
+  {
+    "epoch": 174,
+    "learning_rate": 0.00442983616822775,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3618.2813503126326,
+      "loss": 3.903777599334717e-05
+    }
+  },
+  {
+    "epoch": 175,
+    "evaluation": {
+      "accuracy": 0.6274,
+      "loss": 2.1961361328125
+    },
+    "learning_rate": 0.004112268715800957,
+    "nuisance": {
+      "mean_entropy": 0.27916231751441956,
+      "mean_logit_norm": 20.35222816467285,
+      "mean_max_probability": 0.8914861083030701,
+      "predicted_class_histogram": [
+        498,
+        501,
+        465,
+        486,
+        519,
+        503,
+        531,
+        479,
+        511,
+        507
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-175.safetensors",
+      "sha256": "85edcd35d55c7d1b5db1c2beb6c3784e2874294455fc581d9662214ea20f3d6d",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3608.0651445313697,
+      "loss": 3.9229798316955564e-05
+    }
+  },
+  {
+    "epoch": 176,
+    "learning_rate": 0.003806023374435677,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3600.197089333265,
+      "loss": 3.595155477523804e-05
+    }
+  },
+  {
+    "epoch": 177,
+    "learning_rate": 0.003511175705587435,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3615.59196716415,
+      "loss": 3.661012649536133e-05
+    }
+  },
+  {
+    "epoch": 178,
+    "learning_rate": 0.0032277984585066333,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3609.5453783589574,
+      "loss": 3.758845329284668e-05
+    }
+  },
+  {
+    "epoch": 179,
+    "learning_rate": 0.002955961552288729,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3580.7413520272808,
+      "loss": 3.6287033557891844e-05
+    }
+  },
+  {
+    "epoch": 180,
+    "evaluation": {
+      "accuracy": 0.627,
+      "loss": 2.194369921875
+    },
+    "learning_rate": 0.0026957320586227366,
+    "nuisance": {
+      "mean_entropy": 0.280250608921051,
+      "mean_logit_norm": 20.281511306762695,
+      "mean_max_probability": 0.8910791277885437,
+      "predicted_class_histogram": [
+        503,
+        507,
+        469,
+        482,
+        515,
+        490,
+        530,
+        477,
+        516,
+        511
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-180.safetensors",
+      "sha256": "0163a14c106a08bc525d71a54e8a7cc29ac1740cc3f11f7e9183873fe588c1d4",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3583.5162118719913,
+      "loss": 3.631124496459961e-05
+    }
+  },
+  {
+    "epoch": 181,
+    "learning_rate": 0.002447174185242325,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3592.9048690009217,
+      "loss": 3.969156742095947e-05
+    }
+  },
+  {
+    "epoch": 182,
+    "learning_rate": 0.0022103492600834954,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3585.000289098011,
+      "loss": 3.456540107727051e-05
+    }
+  },
+  {
+    "epoch": 183,
+    "learning_rate": 0.0019853157161528537,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3583.8040470904775,
+      "loss": 3.786988258361816e-05
+    }
+  },
+  {
+    "epoch": 184,
+    "learning_rate": 0.001772129077110103,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3583.5978322987544,
+      "loss": 3.671412467956543e-05
+    }
+  },
+  {
+    "epoch": 185,
+    "evaluation": {
+      "accuracy": 0.629,
+      "loss": 2.1961259765625
+    },
+    "learning_rate": 0.0015708419435684529,
+    "nuisance": {
+      "mean_entropy": 0.2793544828891754,
+      "mean_logit_norm": 20.32858657836914,
+      "mean_max_probability": 0.8913968801498413,
+      "predicted_class_histogram": [
+        503,
+        508,
+        459,
+        470,
+        518,
+        500,
+        539,
+        480,
+        514,
+        509
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-185.safetensors",
+      "sha256": "939ed44288aff414fde93d3d1c3c27d5f4297cc17a667a566b15da6c56fd003c",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3579.5212873871055,
+      "loss": 3.749823570251465e-05
+    }
+  },
+  {
+    "epoch": 186,
+    "learning_rate": 0.0013815039801161732,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3566.8659447918117,
+      "loss": 3.591532707214356e-05
+    }
+  },
+  {
+    "epoch": 187,
+    "learning_rate": 0.0012041619030626347,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3560.0283878798905,
+      "loss": 3.63623857498169e-05
+    }
+  },
+  {
+    "epoch": 188,
+    "learning_rate": 0.0010388594689117077,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3584.8497701342717,
+      "loss": 3.5578203201293944e-05
+    }
+  },
+  {
+    "epoch": 189,
+    "learning_rate": 0.0008856374635655645,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3559.776352949972,
+      "loss": 3.71454119682312e-05
+    }
+  },
+  {
+    "epoch": 190,
+    "evaluation": {
+      "accuracy": 0.6278,
+      "loss": 2.194665625
+    },
+    "learning_rate": 0.000744533692261307,
+    "nuisance": {
+      "mean_entropy": 0.2798003554344177,
+      "mean_logit_norm": 20.305614471435547,
+      "mean_max_probability": 0.8911749720573425,
+      "predicted_class_histogram": [
+        502,
+        513,
+        463,
+        483,
+        514,
+        488,
+        537,
+        475,
+        515,
+        510
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-190.safetensors",
+      "sha256": "688151d5895b9b4ad4c82a752d0fe64f8d48d01e461d74ed34c32c478530a243",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3571.944739130188,
+      "loss": 3.592615127563477e-05
+    }
+  },
+  {
+    "epoch": 191,
+    "learning_rate": 0.0006155829702431174,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3589.4544939742545,
+      "loss": 3.7237119674682615e-05
+    }
+  },
+  {
+    "epoch": 192,
+    "learning_rate": 0.0004988171141721235,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3581.923590919521,
+      "loss": 4.068276882171631e-05
+    }
+  },
+  {
+    "epoch": 193,
+    "learning_rate": 0.00039426493427611206,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3598.9394507028956,
+      "loss": 3.9299094676971433e-05
+    }
+  },
+  {
+    "epoch": 194,
+    "learning_rate": 0.00030195222724102046,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3590.0801442923153,
+      "loss": 3.691387176513672e-05
+    }
+  },
+  {
+    "epoch": 195,
+    "evaluation": {
+      "accuracy": 0.6264,
+      "loss": 2.1935015625
+    },
+    "learning_rate": 0.00022190176984600036,
+    "nuisance": {
+      "mean_entropy": 0.2797117829322815,
+      "mean_logit_norm": 20.310237884521484,
+      "mean_max_probability": 0.8911073207855225,
+      "predicted_class_histogram": [
+        501,
+        509,
+        458,
+        481,
+        518,
+        502,
+        537,
+        478,
+        509,
+        507
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-195.safetensors",
+      "sha256": "8d4c458ff028aad73f94f1c9d37bd8638e3c9f6b1e4e92014bb9e893a08e9200",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3590.8128113426865,
+      "loss": 3.6676299571990965e-05
+    }
+  },
+  {
+    "epoch": 196,
+    "learning_rate": 0.00015413331334360192,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3603.6730616422697,
+      "loss": 3.6321794986724854e-05
+    }
+  },
+  {
+    "epoch": 197,
+    "learning_rate": 9.866357858642213e-05,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3608.6729216765293,
+      "loss": 3.9660298824310304e-05
+    }
+  },
+  {
+    "epoch": 198,
+    "learning_rate": 5.5506251901504864e-05,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3580.7730655224536,
+      "loss": 3.6238300800323486e-05
+    }
+  },
+  {
+    "epoch": 199,
+    "learning_rate": 2.4671981713420017e-05,
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3585.5278992482504,
+      "loss": 3.72896671295166e-05
+    }
+  },
+  {
+    "epoch": 200,
+    "evaluation": {
+      "accuracy": 0.6282,
+      "loss": 2.1961986328125
+    },
+    "learning_rate": 6.168375916970619e-06,
+    "nuisance": {
+      "mean_entropy": 0.2792457044124603,
+      "mean_logit_norm": 20.333515167236328,
+      "mean_max_probability": 0.891506552696228,
+      "predicted_class_histogram": [
+        505,
+        517,
+        457,
+        473,
+        519,
+        503,
+        532,
+        481,
+        511,
+        502
+      ]
+    },
+    "probe_logits": {
+      "path": "logits/epoch-200.safetensors",
+      "sha256": "e37334d191a684820fd80a56b7d220dec247b80aeb457d6648eb16139ecc2d3c",
+      "shape": [
+        5000,
+        10
+      ]
+    },
+    "train": {
+      "accuracy": 1.0,
+      "images_per_second": 3585.006115022059,
+      "loss": 4.000315666198731e-05
+    }
+  }
+]

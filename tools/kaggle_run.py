@@ -127,6 +127,10 @@ def collect(reference: dict[str, Any]) -> None:
             if source.is_file(): shutil.copyfile(source, audit / Path(relative).name)
         for source in sorted((unpacked / "analysis").glob("preflight*.json")):
             shutil.copyfile(source, audit / source.name)
+        for source in sorted(unpacked.glob("seeds/seed-*/metrics/history.json")):
+            destination = audit / source.relative_to(unpacked)
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(source, destination)
         receipt = {"schema_version": 1, "run_id": summary["run_id"], "experiment": reference["experiment"], "kaggle": {"kernel": reference["kernel"], "exact_version": reference["exact_version"], "url": reference["url"], "terminal_status": status(reference["exact_version"])}, "git": {"sha": reference["git_sha"], "remote_url": reference["git_remote_url"]}, "config": {"path": reference["config"], "sha256": reference["config_sha256"], "manifest_sha256": summary.get("manifest_sha256")}, "analysis_artifact": {"name": archives[0].name, "bytes": archives[0].stat().st_size, "sha256": digest}, "recovery_artifact": {**summary.get("recovery", {}), "location": f"Kaggle output of {reference['exact_version']}"}, "success": summary["success"], "collected_at": now()}
         (audit / "receipt.json").write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
         print(json.dumps({"receipt": str(audit / "receipt.json"), "success": summary["success"]}, indent=2))
