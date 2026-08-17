@@ -122,19 +122,22 @@ def collect(reference: dict[str, Any]) -> None:
         audit = AUDIT / summary["run_id"]; audit.mkdir(parents=True, exist_ok=True)
         with tarfile.open(archives[0]) as archive: archive.extractall(folder / "payload", filter="data")
         unpacked = folder / "payload" / summary["run_id"]
-        for relative in ("analysis/summary.json", "analysis/provenance.json", "analysis/result-report.json", "phase_status.json", "environment.json", "data_manifest.json"):
+        for relative in ("analysis/summary.json", "analysis/provenance.json", "analysis/result-report.json", "phase_status.json", "environment.json", "data_manifest.json", "failure.json", "run_manifest.json", "resolved_config.json"):
             source = unpacked / relative
             if source.is_file(): shutil.copyfile(source, audit / Path(relative).name)
         for source in sorted((unpacked / "analysis").glob("preflight*.json")):
             shutil.copyfile(source, audit / source.name)
-        for source in sorted(unpacked.glob("seeds/seed-*/metrics/history.json")):
-            destination = audit / source.relative_to(unpacked)
-            destination.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(source, destination)
+        for pattern in ("seeds/seed-*/metrics/history.json", "seeds/seed-*/failure.json"):
+            for source in sorted(unpacked.glob(pattern)):
+                destination = audit / source.relative_to(unpacked)
+                destination.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(source, destination)
         receipt = {"schema_version": 1, "run_id": summary["run_id"], "experiment": reference["experiment"], "kaggle": {"kernel": reference["kernel"], "exact_version": reference["exact_version"], "url": reference["url"], "terminal_status": status(reference["exact_version"])}, "git": {"sha": reference["git_sha"], "remote_url": reference["git_remote_url"]}, "config": {"path": reference["config"], "sha256": reference["config_sha256"], "manifest_sha256": summary.get("manifest_sha256")}, "analysis_artifact": {"name": archives[0].name, "bytes": archives[0].stat().st_size, "sha256": digest}, "recovery_artifact": {**summary.get("recovery", {}), "location": f"Kaggle output of {reference['exact_version']}"}, "success": summary["success"], "collected_at": now()}
         (audit / "receipt.json").write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
         print(json.dumps({"receipt": str(audit / "receipt.json"), "success": summary["success"]}, indent=2))
 def main(argv: list[str] | None = None) -> None:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     parser = argparse.ArgumentParser(description=__doc__); sub = parser.add_subparsers(dest="command", required=True)
     for command in ("validate", "launch", "status", "logs", "collect"):
         item = sub.add_parser(command); item.add_argument("--experiment", required=True); item.add_argument("--commit")

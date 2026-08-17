@@ -1,0 +1,5 @@
+{
+  "message": "seed worker exit codes: [1, 1]",
+  "traceback": "Traceback (most recent call last):\n  File \"/tmp/overfitting-spaces-runtime/source/src/overfitting_spaces/runner.py\", line 172, in run\n    if any(codes): raise RuntimeError(f\"seed worker exit codes: {codes}\")\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: seed worker exit codes: [1, 1]\n",
+  "type": "RuntimeError"
+}

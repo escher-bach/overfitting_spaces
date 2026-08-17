@@ -1,0 +1,25 @@
+{
+  "phases": [
+    {
+      "at": 1787002533.4378335,
+      "phase": "capture_environment",
+      "state": "complete"
+    },
+    {
+      "at": 1787002533.4498448,
+      "phase": "training",
+      "scheduling": "one independent seed process per GPU; no DDP",
+      "seeds": [
+        881886696,
+        1226023601
+      ],
+      "state": "running"
+    },
+    {
+      "at": 1787002538.4060946,
+      "error": "RuntimeError",
+      "phase": "failure",
+      "state": "failed"
+    }
+  ]
+}

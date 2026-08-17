@@ -1,0 +1,13 @@
+{
+  "experiment": "main-development-01",
+  "kernel": "aniruddhavarma/overfit-main-development-01-7e42407",
+  "version": 1,
+  "exact_version": "aniruddhavarma/overfit-main-development-01-7e42407/1",
+  "url": "https://www.kaggle.com/code/aniruddhavarma/overfit-main-development-01-7e42407",
+  "git_sha": "7e424075389c7f2afeded5a8192d4ef7f391324c",
+  "git_remote_url": "https://github.com/escher-bach/overfitting_spaces.git",
+  "config": "configs/main-development-01.toml",
+  "config_sha256": "974ca03dd28ab1d890502c887c5350995d038e215b879cde54cf8f82988feaf2",
+  "manifest_sha256": "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb",
+  "submitted_at": "2026-08-17T21:35:05.905403+00:00"
+}

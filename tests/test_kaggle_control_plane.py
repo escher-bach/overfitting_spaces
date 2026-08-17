@@ -89,3 +89,40 @@ def test_collection_pattern_excludes_recovery_payload():
     assert pattern.fullmatch("overfitting-results/latest-summary.json")
     assert pattern.fullmatch("overfitting-results/run-1-analysis.tar.gz")
     assert not pattern.fullmatch("overfitting-results/run-1.tar.gz")
+
+
+def test_collect_retains_failure_diagnostics(monkeypatch, tmp_path):
+    import hashlib
+    import tarfile
+
+    tool = load_tool(); run_id = "run-failed"
+    payload = tmp_path / "payload" / run_id
+    payload.mkdir(parents=True)
+    for name, contents in (("failure.json", "{}"), ("run_manifest.json", "{}"), ("resolved_config.json", "{}")):
+        (payload / name).write_text(contents)
+    seed_failure = payload / "seeds" / "seed-1" / "failure.json"
+    seed_failure.parent.mkdir(parents=True)
+    seed_failure.write_text("{}")
+    (payload / "analysis").mkdir(); (payload / "analysis" / "summary.json").write_text("{}")
+    archive = tmp_path / f"{run_id}-analysis.tar.gz"
+    with tarfile.open(archive, "w:gz") as value:
+        value.add(payload, arcname=run_id)
+    digest = hashlib.sha256(archive.read_bytes()).hexdigest()
+    summary = {"run_id": run_id, "success": False, "git_sha": "a" * 40, "config_sha256": "b", "manifest_sha256": "c", "analysis": {"sha256": digest}}
+
+    def fake_kaggle(*args, **kwargs):
+        destination = Path(args[args.index("-p") + 1])
+        (destination / "latest-summary.json").write_text(json.dumps(summary))
+        (destination / archive.name).write_bytes(archive.read_bytes())
+        (destination / f"{run_id}-analysis.sha256").write_text(f"{digest}  {archive.name}")
+        return ""
+
+    monkeypatch.setattr(tool, "kaggle", fake_kaggle)
+    monkeypatch.setattr(tool, "status", lambda *_: "ERROR")
+    monkeypatch.setattr(tool, "AUDIT", tmp_path / "audit")
+    reference = {"experiment": "failed", "kernel": "owner/kernel", "exact_version": "owner/kernel/1", "url": "https://example.invalid", "git_sha": "a" * 40, "git_remote_url": "https://example.invalid/repo", "config": "configs/example.toml", "config_sha256": "b", "manifest_sha256": "c"}
+    tool.collect(reference)
+
+    audit = next((tmp_path / "audit").iterdir())
+    assert all((audit / name).is_file() for name in ("failure.json", "run_manifest.json", "resolved_config.json"))
+    assert (audit / "seeds" / "seed-1" / "failure.json").is_file()
