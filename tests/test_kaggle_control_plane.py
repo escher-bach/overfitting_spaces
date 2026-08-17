@@ -36,6 +36,14 @@ def test_staged_title_equals_slug(monkeypatch):
     assert metadata["machine_shape"] == "NvidiaTeslaT4"
 
 
+def test_pilot_stages_maintained_cifar_dataset(monkeypatch):
+    tool = load_tool(); experiment = tool.resolve("pilot-overfit")
+    monkeypatch.setattr(tool, "render", lambda *_: json.dumps({"cells": [], "metadata": {}, "nbformat": 4, "nbformat_minor": 5}))
+    with tempfile.TemporaryDirectory() as temp:
+        tool.stage("c" * 40, experiment, Path(temp)); metadata = json.loads((Path(temp) / "kernel-metadata.json").read_text())
+    assert metadata["dataset_sources"] == ["pankrzysiu/cifar10-python"]
+
+
 def test_status_parser_uses_exact_worker_status(monkeypatch):
     tool = load_tool()
     monkeypatch.setattr(tool, "kaggle", lambda *_args, **_kwargs: 'status "KernelWorkerStatus.COMPLETE"')

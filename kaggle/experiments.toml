@@ -19,5 +19,6 @@ purpose = "hardware, data, one-step and throughput gate; not a scientific result
 slug_prefix = "overfit-pilot"
 config = "configs/pilot.toml"
 manifest = "data/manifests/cifar10-v1.json"
-manifest_sha256 = "PENDING_COMMITTED_MANIFEST_HASH"
+manifest_sha256 = "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb"
+dataset_sources = ["pankrzysiu/cifar10-python"]
 purpose = "two concurrent recipe-validation-only seeds; must pass the pilot gate before main runs"

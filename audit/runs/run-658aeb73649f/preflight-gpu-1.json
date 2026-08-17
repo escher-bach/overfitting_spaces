@@ -1,0 +1,20 @@
+{
+  "batch_size": 512,
+  "input_gate_passed": true,
+  "input_headroom": 53.48683062184942,
+  "input_pipeline": {
+    "elapsed_seconds": 0.3320034130001659,
+    "images": 15120,
+    "images_per_second": 45541.70050050794,
+    "steps": 30
+  },
+  "minimum_input_headroom": 1.25,
+  "physical_gpu": 1,
+  "training": {
+    "accuracy": 0.1737,
+    "images_per_second": 851.4563299232786,
+    "loss": 2.72096875
+  },
+  "visible_device": "Tesla T4",
+  "workers_per_seed": 2
+}

@@ -4,9 +4,9 @@ root_seeds = [101, 202]
 output_root = "/kaggle/working/overfitting-results"
 
 [data]
-root = "/tmp/cifar10"
+root = "/kaggle/input/cifar10-python"
 manifest = "data/manifests/cifar10-v1.json"
-download = true
+download = false
 normalization_mean = [0.4914, 0.4822, 0.4465]
 normalization_std = [0.2470, 0.2435, 0.2616]
 

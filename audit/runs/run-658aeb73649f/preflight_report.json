@@ -1,0 +1,66 @@
+{
+  "concurrent_seed_processes": 2,
+  "devices": [
+    {
+      "capability": [
+        7,
+        5
+      ],
+      "index": 0,
+      "memory_bytes": 15636037632,
+      "name": "Tesla T4"
+    },
+    {
+      "capability": [
+        7,
+        5
+      ],
+      "index": 1,
+      "memory_bytes": 15636037632,
+      "name": "Tesla T4"
+    }
+  ],
+  "no_ddp": true,
+  "per_gpu": [
+    {
+      "batch_size": 512,
+      "input_gate_passed": true,
+      "input_headroom": 62.956031136979654,
+      "input_pipeline": {
+        "elapsed_seconds": 0.28469094199999745,
+        "images": 15120,
+        "images_per_second": 53110.225052401336,
+        "steps": 30
+      },
+      "minimum_input_headroom": 1.25,
+      "physical_gpu": 0,
+      "training": {
+        "accuracy": 0.1754,
+        "images_per_second": 843.6082150230242,
+        "loss": 3.08385703125
+      },
+      "visible_device": "Tesla T4",
+      "workers_per_seed": 2
+    },
+    {
+      "batch_size": 512,
+      "input_gate_passed": true,
+      "input_headroom": 53.48683062184942,
+      "input_pipeline": {
+        "elapsed_seconds": 0.3320034130001659,
+        "images": 15120,
+        "images_per_second": 45541.70050050794,
+        "steps": 30
+      },
+      "minimum_input_headroom": 1.25,
+      "physical_gpu": 1,
+      "training": {
+        "accuracy": 0.1737,
+        "images_per_second": 851.4563299232786,
+        "loss": 2.72096875
+      },
+      "visible_device": "Tesla T4",
+      "workers_per_seed": 2
+    }
+  ]
+}

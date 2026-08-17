@@ -25,4 +25,8 @@ against torchvision's verified CIFAR-10 download:
 python tools/generate_manifest.py --data-root /tmp/cifar10 --download --output data/manifests/cifar10-v1.json
 ```
 
+Pilot and main runs attach the established `pankrzysiu/cifar10-python` Kaggle
+dataset and let torchvision verify its canonical batch checksums. This avoids
+paying the slow public-download path in every GPU session.
+
 Do not use `Overfitting.ipynb` as an implementation input; it is historical.

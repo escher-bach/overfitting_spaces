@@ -82,6 +82,10 @@ def validate(experiment: dict[str, Any], sha: str) -> None:
 def stage(sha: str, experiment: dict[str, Any], directory: Path) -> None:
     name = slug(experiment, sha); (directory / f"{name}.ipynb").write_text(render(sha, experiment), encoding="utf-8")
     metadata = {"id": kernel(experiment, sha), "title": name, "code_file": f"{name}.ipynb", "language": "python", "kernel_type": "notebook", "is_private": True, "enable_gpu": True, "enable_internet": True, "machine_shape": experiment["accelerator"]}
+    if experiment.get("dataset_sources"):
+        metadata["dataset_sources"] = experiment["dataset_sources"]
+    if experiment.get("kernel_sources"):
+        metadata["kernel_sources"] = experiment["kernel_sources"]
     (directory / "kernel-metadata.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
 def status(exact_version: str) -> str:
     result = kaggle("kernels", "status", exact_version, check=False); found = re.search(r'status "(?:KernelWorkerStatus\.)?([A-Z_]+)"', result)
@@ -121,6 +125,8 @@ def collect(reference: dict[str, Any]) -> None:
         for relative in ("analysis/summary.json", "analysis/provenance.json", "analysis/result-report.json", "phase_status.json", "environment.json", "data_manifest.json"):
             source = unpacked / relative
             if source.is_file(): shutil.copyfile(source, audit / Path(relative).name)
+        for source in sorted((unpacked / "analysis").glob("preflight*.json")):
+            shutil.copyfile(source, audit / source.name)
         receipt = {"schema_version": 1, "run_id": summary["run_id"], "experiment": reference["experiment"], "kaggle": {"kernel": reference["kernel"], "exact_version": reference["exact_version"], "url": reference["url"], "terminal_status": status(reference["exact_version"])}, "git": {"sha": reference["git_sha"], "remote_url": reference["git_remote_url"]}, "config": {"path": reference["config"], "sha256": reference["config_sha256"], "manifest_sha256": summary.get("manifest_sha256")}, "analysis_artifact": {"name": archives[0].name, "bytes": archives[0].stat().st_size, "sha256": digest}, "recovery_artifact": {**summary.get("recovery", {}), "location": f"Kaggle output of {reference['exact_version']}"}, "success": summary["success"], "collected_at": now()}
         (audit / "receipt.json").write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
         print(json.dumps({"receipt": str(audit / "receipt.json"), "success": summary["success"]}, indent=2))

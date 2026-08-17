@@ -1,0 +1,13 @@
+{
+  "experiment": "preflight",
+  "kernel": "aniruddhavarma/overfit-preflight-bbc758a",
+  "version": 1,
+  "exact_version": "aniruddhavarma/overfit-preflight-bbc758a/1",
+  "url": "https://www.kaggle.com/code/aniruddhavarma/overfit-preflight-bbc758a",
+  "git_sha": "bbc758a83282020ce5d608097aefd5c916e73a55",
+  "git_remote_url": "https://github.com/escher-bach/overfitting_spaces.git",
+  "config": "configs/preflight.toml",
+  "config_sha256": "dc447cee0a03c7fcfa007a11dc0772ae1ca5c761641d60e51d3ef086d746f350",
+  "manifest_sha256": "GENERATED_AT_PREFLIGHT",
+  "submitted_at": "2026-08-17T20:12:22.675595+00:00"
+}

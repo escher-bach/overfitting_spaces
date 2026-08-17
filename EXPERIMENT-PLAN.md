@@ -321,6 +321,9 @@ runner, artifacts, and audit schema.
   `collect` operations. A lost local shell must not lose the remote run.
 - Source clones and caches live under `/tmp`; `/kaggle/working` contains only
   declared result artifacts.
+- CIFAR-10 is attached as the declared `pankrzysiu/cifar10-python` Kaggle
+  dataset source after the bootstrap preflight; torchvision verifies the
+  canonical batch checksums before use.
 - Successful and failed runs both publish bounded diagnostics and checksums.
 - Routine collection downloads compact scientific/audit artifacts, not the
   full Kaggle output tree or heavyweight checkpoints.
