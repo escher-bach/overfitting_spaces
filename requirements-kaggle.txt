@@ -1,0 +1,4 @@
+# Kaggle supplies the CUDA-enabled torch/torchvision runtime. Do not replace it
+# with a PyPI wheel in the launcher.
+safetensors==0.5.3
+psutil==7.0.0

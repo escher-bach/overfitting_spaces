@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "overfitting-spaces"
+version = "0.1.0"
+description = "Reproducible behavioral-geometry experiments for overfitting"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26,<3",
+  "safetensors>=0.5,<1",
+  "torch>=2.6,<2.8",
+  "torchvision>=0.21,<0.23",
+]
+
+[project.optional-dependencies]
+analysis = ["scikit-learn>=1.5,<2"]
+dev = ["pytest>=8,<9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.setuptools.packages.find]
+where = ["src"]

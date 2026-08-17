@@ -1,0 +1,17 @@
+# Python bytecode and test/cache output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments, experiment outputs, and downloaded CIFAR files
+.venv/
+venv/
+audit/runs/
+overfitting-results/
+data/cifar-10-batches-py/
+
+# Notebook/editor state
+.ipynb_checkpoints/
+.vscode/

@@ -1,0 +1,38 @@
+[run]
+mode = "pilot"
+root_seeds = [101, 202]
+output_root = "/kaggle/working/overfitting-results"
+
+[data]
+root = "/tmp/cifar10"
+manifest = "data/manifests/cifar10-v1.json"
+download = true
+normalization_mean = [0.4914, 0.4822, 0.4465]
+normalization_std = [0.2470, 0.2435, 0.2616]
+
+[model]
+name = "resnet18_cifar"
+classes = 10
+
+[training]
+epochs = 200
+batch_size = 512
+learning_rate = 0.1
+momentum = 0.9
+weight_decay = 0.0
+checkpoint_every_epochs = 5
+amp = true
+channels_last = true
+tf32 = true
+loader_workers = 2
+evaluation_loader_workers = 0
+prefetch_factor = 4
+pin_memory = true
+persistent_workers = true
+scheduler = "cosine"
+
+[hardware]
+expected_cuda_devices = 2
+expected_gpu_name = "T4"
+concurrent_seed_processes = 2
+require_t4 = true

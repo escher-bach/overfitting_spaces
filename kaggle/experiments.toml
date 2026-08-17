@@ -1,0 +1,23 @@
+schema_version = 1
+# Set this once to the Kaggle account that owns the private kernels. Validation
+# refuses submissions while this placeholder is present.
+owner = "aniruddhavarma"
+git_remote = "origin"
+launcher_template = "kaggle/launcher-template.ipynb"
+output_root = "/kaggle/working/overfitting-results"
+accelerator = "NvidiaTeslaT4"
+
+[experiments.preflight]
+slug_prefix = "overfit-preflight"
+config = "configs/preflight.toml"
+manifest = "data/manifests/cifar10-v1.json"
+manifest_sha256 = "GENERATED_AT_PREFLIGHT"
+manifest_bootstrap = true
+purpose = "hardware, data, one-step and throughput gate; not a scientific result"
+
+[experiments.pilot-overfit]
+slug_prefix = "overfit-pilot"
+config = "configs/pilot.toml"
+manifest = "data/manifests/cifar10-v1.json"
+manifest_sha256 = "PENDING_COMMITTED_MANIFEST_HASH"
+purpose = "two concurrent recipe-validation-only seeds; must pass the pilot gate before main runs"
