@@ -1,0 +1,11 @@
+{
+  "config_sha256": "91c30779ad8653b4670a6a32529bba159c3045e9ad376f5eefe651907ea6a5ca",
+  "git_sha": "b42d5e48d17d122e9da82640194464c3dc5af902",
+  "manifest_sha256": "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb",
+  "root_seeds": [
+    4292514521,
+    971400669
+  ],
+  "run_id": "run-98357fef99fe",
+  "schema_version": 1
+}

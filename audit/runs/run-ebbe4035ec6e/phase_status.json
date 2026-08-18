@@ -1,0 +1,32 @@
+{
+  "phases": [
+    {
+      "at": 1787009776.454623,
+      "phase": "capture_environment",
+      "state": "complete"
+    },
+    {
+      "at": 1787009961.6945891,
+      "configured_root": "/kaggle/input/cifar10-python",
+      "phase": "resolve_data",
+      "resolved_root": "/tmp/overfitting-cifar10",
+      "source": "tmp_download",
+      "state": "complete"
+    },
+    {
+      "at": 1787009961.7073264,
+      "phase": "training",
+      "scheduling": "one independent seed process per GPU; no DDP",
+      "seeds": [
+        3002361271,
+        1741336945
+      ],
+      "state": "running"
+    },
+    {
+      "at": 1787010733.4512146,
+      "phase": "training",
+      "state": "complete"
+    }
+  ]
+}

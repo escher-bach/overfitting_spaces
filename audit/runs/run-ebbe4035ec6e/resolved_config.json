@@ -1,0 +1,52 @@
+{
+  "data": {
+    "download": false,
+    "manifest": "data/manifests/cifar10-v1.json",
+    "normalization_mean": [
+      0.4914,
+      0.4822,
+      0.4465
+    ],
+    "normalization_std": [
+      0.247,
+      0.2435,
+      0.2616
+    ],
+    "root": "/kaggle/input/cifar10-python"
+  },
+  "hardware": {
+    "concurrent_seed_processes": 2,
+    "expected_cuda_devices": 2,
+    "expected_gpu_name": "T4",
+    "require_t4": true
+  },
+  "model": {
+    "classes": 10,
+    "name": "resnet18_cifar"
+  },
+  "run": {
+    "mode": "main",
+    "output_root": "/kaggle/working/overfitting-results",
+    "root_seeds": [
+      3002361271,
+      1741336945
+    ]
+  },
+  "training": {
+    "amp": true,
+    "batch_size": 512,
+    "channels_last": true,
+    "checkpoint_every_epochs": 5,
+    "epochs": 200,
+    "evaluation_loader_workers": 0,
+    "learning_rate": 0.1,
+    "loader_workers": 2,
+    "momentum": 0.9,
+    "persistent_workers": true,
+    "pin_memory": true,
+    "prefetch_factor": 4,
+    "scheduler": "cosine",
+    "tf32": true,
+    "weight_decay": 0.0
+  }
+}

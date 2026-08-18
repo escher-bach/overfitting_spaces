@@ -1,0 +1,36 @@
+{
+  "accelerator_inventory": [
+    {
+      "capability": [
+        7,
+        5
+      ],
+      "index": 0,
+      "memory_bytes": 15636037632,
+      "name": "Tesla T4"
+    },
+    {
+      "capability": [
+        7,
+        5
+      ],
+      "index": 1,
+      "memory_bytes": 15636037632,
+      "name": "Tesla T4"
+    }
+  ],
+  "config_sha256": "6a388656a3f4a3ca3bffd51075264454e9a02c1d2cab51f64fc5b8f65bc3d9f1",
+  "data_resolution": {
+    "configured_root": "/kaggle/input/cifar10-python",
+    "resolved_root": "/tmp/overfitting-cifar10",
+    "source": "tmp_download"
+  },
+  "git_sha": "b42d5e48d17d122e9da82640194464c3dc5af902",
+  "manifest_sha256": "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb",
+  "root_seeds": [
+    4247511459,
+    3127276340
+  ],
+  "run_id": "run-0e25bbe73f49",
+  "schema_version": 1
+}

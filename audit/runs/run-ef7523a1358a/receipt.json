@@ -1,0 +1,33 @@
+{
+  "analysis_artifact": {
+    "bytes": 26930,
+    "name": "run-ef7523a1358a-analysis.tar.gz",
+    "sha256": "531631c0887054687f6397d7ab5b128897d09a562d35b06a44369622eb807cdc"
+  },
+  "collected_at": "2026-08-17T22:44:26.040272+00:00",
+  "config": {
+    "manifest_sha256": "c99c82659dcae6c874e23ade21fb1e6a3ee75202e2ab0c711c545d30e7f1efdb",
+    "path": "configs/main-development-01.toml",
+    "sha256": "974ca03dd28ab1d890502c887c5350995d038e215b879cde54cf8f82988feaf2"
+  },
+  "experiment": "main-development-01",
+  "git": {
+    "remote_url": "https://github.com/escher-bach/overfitting_spaces.git",
+    "sha": "b42d5e48d17d122e9da82640194464c3dc5af902"
+  },
+  "kaggle": {
+    "exact_version": "aniruddhavarma/overfit-main-development-01-b42d5e4/1",
+    "kernel": "aniruddhavarma/overfit-main-development-01-b42d5e4",
+    "terminal_status": "COMPLETE",
+    "url": "https://www.kaggle.com/code/aniruddhavarma/overfit-main-development-01-b42d5e4"
+  },
+  "recovery_artifact": {
+    "bytes": 15279928,
+    "location": "Kaggle output of aniruddhavarma/overfit-main-development-01-b42d5e4/1",
+    "path": "run-ef7523a1358a.tar.gz",
+    "sha256": "ee5e4be6d2045e2bbfab0c327114382ba5456058df2f4a82931b146f21adc709"
+  },
+  "run_id": "run-ef7523a1358a",
+  "schema_version": 1,
+  "success": true
+}
