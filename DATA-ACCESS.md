@@ -80,6 +80,14 @@ Use the official Kaggle CLI only. Keep downloaded archives and extractions
 outside the tracked source tree; for example:
 `C:\Users\Aniruddha\.cache\overfitting-spaces\development`.
 
+For the completed development analysis on this machine, the verified archives
+are under
+`C:\Users\Aniruddha\.cache\overfitting-spaces\development-b42d5e4\overfitting-results`
+and their extracted contents are under
+`C:\Users\Aniruddha\.cache\overfitting-spaces\development-b42d5e4\extracted`.
+These cache paths are conveniences, not sources of truth; the receipts and
+checksums above define the authorized data.
+
 The following PowerShell sequence retrieves one recovery archive, verifies it
 against its local receipt, checks the member namespace before extraction, and
 extracts into that external cache. Substitute a row from the inventory only as
@@ -93,7 +101,9 @@ $exactVersion = 'aniruddhavarma/overfit-main-development-01-b42d5e4/1'
 $receipt = Get-Content -Raw -LiteralPath "$repo\audit\runs\$run\receipt.json" | ConvertFrom-Json
 New-Item -ItemType Directory -Force -Path $cache | Out-Null
 kaggle kernels output $exactVersion -p $cache --file-pattern $receipt.recovery_artifact.path -o
-$archive = Join-Path $cache $receipt.recovery_artifact.path
+$matches = @(Get-ChildItem -LiteralPath $cache -Recurse -File -Filter $receipt.recovery_artifact.path)
+if ($matches.Count -ne 1) { throw 'Expected exactly one downloaded recovery archive.' }
+$archive = $matches[0].FullName
 $actual = (Get-FileHash -LiteralPath $archive -Algorithm SHA256).Hash.ToLowerInvariant()
 if ($actual -ne $receipt.recovery_artifact.sha256) { throw 'Recovery archive SHA-256 mismatch.' }
 $members = tar -tzf $archive
@@ -129,3 +139,15 @@ Do **not** retrieve, inspect, extract, attach, or otherwise access any
 frozen. Confirmation outputs must not influence representation choice,
 centering/scaling statistics, PCA, hyperparameters, baselines, plots, or
 interpretation during this stage.
+
+The completed development analysis is reproducible from the repository root
+with:
+
+```powershell
+$env:PYTHONPATH = 'src'
+py -3.13 tools\analyze_development.py --raw-root 'C:\Users\Aniruddha\.cache\overfitting-spaces\development-b42d5e4\extracted' --output 'analysis\development-b42d5e4'
+```
+
+Its human-readable report is `analysis/development-b42d5e4/DEVELOPMENT-REPORT.md`;
+machine-readable results, integrity records, held-out predictions, per-run
+metrics, and plots are in the same directory.
